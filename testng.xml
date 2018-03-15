@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+	<test name="Run on iOS 6plus">
+		<parameter name="port" value="4567"></parameter>
+		<parameter name="deviceID" value="16a241b5344bc50421ebc7a5a27edea3019f5536"></parameter>
+		  <classes>
+           <class name ="ios.UICatalogGrid"></class>
+       </classes>
+	</test>
+	
+	<test name="Run on iOS 4S">
+		<parameter name="port" value="4568"></parameter>
+		<parameter name="deviceID" value="c84c5fd8fb6cd5e842473a1888c511b7cf8d9bef"></parameter>
+		  <classes>
+           <class name ="ios.UICatalogGrid"></class>
+       </classes>
+	</test>
+	
+
+</suite>

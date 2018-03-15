@@ -1,0 +1,11 @@
+Start the Hub:
+
+java -jar selenium-server-standalone-2.47.1.jar -role hub
+
+Start Device 1:
+
+node appium -a localhost -p 4567 --udid 2342345fd8fb6cd5e842423432488c511b7cf8d9bef -bp 5556 --nodeconfig "/Users/Downloads/AppiumGrid/json/all.json" -g "/Users/rahularora/Downloads/AppiumGrid/json/all.json/appium_1.log" --session-override
+
+Start Device 2:
+
+node appium -a localhost -p 4568 --udid 456458fb6cd5e842473a1888c511b7cf8d9bef -bp 5557 --nodeconfig "/Users/Downloads/AppiumGrid/json/all.json" -g "/Users/rahularora/Downloads/AppiumGrid/json/all.json/appium_2.log" --session-override

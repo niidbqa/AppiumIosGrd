@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="port" value="4568"/>
+  <parameter name="deviceID" value="c84c5fd8fb6cd5e842473a1888c511b7cf8d9bef"/>
+  <test name="Run on iOS 4S(failed)" parallel="tests">
+    <parameter name="port" value="4568"/>
+    <parameter name="deviceID" value="c84c5fd8fb6cd5e842473a1888c511b7cf8d9bef"/>
+    <classes>
+      <class name="ios.policybazar">
+        <methods>
+          <include name="GenerateOPT"/>
+          <include name="startTime"/>
+          <include name="startTime"/>
+        </methods>
+      </class> <!-- ios.policybazar -->
+    </classes>
+  </test> <!-- Run on iOS 4S(failed) -->
+  <test name="Run on iOS 6plus(failed)" parallel="tests">
+    <parameter name="port" value="4567"/>
+    <parameter name="deviceID" value="16a241b5344bc50421ebc7a5a27edea3019f5536"/>
+    <classes>
+      <class name="ios.policybazar">
+        <methods>
+          <include name="GenerateOPT"/>
+          <include name="startTime"/>
+          <include name="startTime"/>
+        </methods>
+      </class> <!-- ios.policybazar -->
+    </classes>
+  </test> <!-- Run on iOS 6plus(failed) -->
+</suite> <!-- Failed suite [Suite] -->
